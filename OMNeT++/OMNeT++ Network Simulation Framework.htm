@@ -1,0 +1,839 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-gb" xmlns="http://www.w3.org/1999/xhtml" lang="en-gb"><head>
+
+
+  <!-- base href="http://www.omnetpp.org/" -->
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="omnet, omnest, discrete event simulation, network simulation, performance modeling, architecture verification, eclipse, network emulation, animation, wireless, ad-hoc, sensor, wimax, wifi, zigbee, tcp, sctp, ip, ipv6, traffic simulation, packet capture">
+  <meta name="description" content="OMNeT++ Network Simulation Framework">
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management">
+  <title>OMNeT++ Network Simulation Framework</title>
+  <link href="http://www.omnetpp.org/index.php?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0">
+  <link href="http://www.omnetpp.org/index.php?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0">
+  <link href="http://www.omnetpp.org/templates/omnetpp_bizcity_felix/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="OMNeT++%20Network%20Simulation%20Framework_files/signal.css" type="text/css">
+  <script type="text/javascript" src="OMNeT++%20Network%20Simulation%20Framework_files/mootools.js"></script>
+  <script type="text/javascript" src="OMNeT++%20Network%20Simulation%20Framework_files/caption.js"></script>
+  <script type="text/javascript" src="OMNeT++%20Network%20Simulation%20Framework_files/silverlight.js"></script>
+  <script type="text/javascript" src="OMNeT++%20Network%20Simulation%20Framework_files/wmvplayer.js"></script>
+  <script type="text/javascript" src="OMNeT++%20Network%20Simulation%20Framework_files/swfobject.js"></script>
+  <script type="text/javascript" src="OMNeT++%20Network%20Simulation%20Framework_files/avreloaded.js"></script>
+
+<link rel="stylesheet" href="OMNeT++%20Network%20Simulation%20Framework_files/system.css" type="text/css">
+<link rel="stylesheet" href="OMNeT++%20Network%20Simulation%20Framework_files/general.css" type="text/css">
+<link rel="stylesheet" href="OMNeT++%20Network%20Simulation%20Framework_files/template.css" type="text/css">
+<!--[if IE 5.0000]>
+  <link rel="stylesheet" href="/templates/omnetpp_bizcity_felix/css/ie5.css" type="text/css" />
+<![endif]-->
+</head><body id="body">
+
+  <!-- banner area -->
+  <div id="top_bar" style="height: 105px;">
+      <div style="position: absolute; top: 0px; width: 100%; height: 105px; background-image: url(&quot;/templates/omnetpp_bizcity_felix/images/v-blue.png&quot;);"></div>
+      <div style="background-repeat: no-repeat; position: absolute; top: 0px; width: 100%; height: 105px; background-image: url(&quot;/templates/omnetpp_bizcity_felix/images/yellow-left.png&quot;);"></div>
+      <div style="background-repeat: no-repeat; position: absolute; top: 0px; width: 100%; height: 105px; background-image: url(&quot;/templates/omnetpp_bizcity_felix/images/gradient-full.png&quot;); background-position: right center;"></div>
+      <div style="background-repeat: no-repeat; position: absolute; top: 0px; width: 100%; height: 105px; background-image: url(&quot;/templates/omnetpp_bizcity_felix/images/graphics.png&quot;); background-position: right top;"></div>
+      <a href="http://www.omnetpp.org/">
+        <img src="OMNeT++%20Network%20Simulation%20Framework_files/logo.png" style="position: absolute; left: 20px; top: 20px;" border="0">
+      </a>  
+  </div>
+  
+  <!-- top, just below the banner -->
+  
+  <!-- main area, contain left-content-right columns -->
+  <table id="centertb" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody><tr>
+      <!-- left column (menu) -->
+      <td class="leftcol" rowspan="2" valign="top">
+                <div>
+        		<div class="module_menu">
+			<div>
+				<div>
+					<div>
+											<ul class="menu"><li id="current" class="parent active item1"><a href="http://www.omnetpp.org/"><span>Home</span></a><ul><li class="item7"><a href="http://www.omnetpp.org/home/what-is-omnet"><span>What is OMNeT++</span></a></li><li class="item43"><a href="http://www.omnetpp.org/home/screenshots"><span>Screenshots</span></a></li><li class="item49"><a href="http://www.omnetpp.org/home/videos"><span>Videos</span></a></li><li class="item8"><a href="http://www.omnetpp.org/home/license"><span>License</span></a></li><li class="item10"><a href="http://www.omnetpp.org/home/how-to-use-this-site"><span>How to use this site?</span></a></li><li class="item9"><a href="http://www.omnest.com/" target="_blank"><span>Commercial edition</span></a></li></ul></li><li class="parent item3"><a href="http://www.omnetpp.org/documentation"><span>Documentation</span></a></li><li class="item11"><a href="http://www.omnetpp.org/omnetpp"><span>Downloads</span></a></li><li class="parent item5"><a href="http://www.omnetpp.org/models"><span>Simulation models</span></a></li><li class="item19"><a href="http://www.omnetpp.org/pmwiki"><span>Wiki</span></a></li><li class="item21"><a href="http://groups.google.com/group/omnetpp" target="_blank"><span>Mailing list archive</span></a></li><li class="item31"><a href="http://www.omnetpp.org/publications"><span>Publications</span></a></li><li class="parent item40"><a href="http://www.omnetpp.org/get-involved"><span>Get involved!</span></a></li></ul>					</div>
+				</div>
+			</div>
+		</div>
+			<div class="module">
+			<div>
+				<div>
+					<div>
+											<a href="http://www.omnetpp.org/component/docman/cat_view/17-downloads/1-omnet-releases" mce_href="/component/docman/cat_view/17-downloads/1-omnet-releases"><img src="OMNeT++%20Network%20Simulation%20Framework_files/download_button.png" mce_src="/images/download_button.png" alt="DOWNLOAD" border="0"></a>
+<!--
+<br
+<br>
+<a href="http://omnest.com" mce_href="http://omnest.com"><img src="/images/commercial-edition.png" mce_src="/images/commercial-edition.png" alt="Commercial Edition" border="0"></a>
+-->					</div>
+				</div>
+			</div>
+		</div>
+			<div class="module">
+			<div>
+				<div>
+					<div>
+											<form action="index.php" method="post">
+	<div class="search">
+		<input name="searchword" id="mod_search_searchword" maxlength="30" alt="Search" class="inputbox" size="30" value="search..." onblur="if(this.value=='') this.value='search...';" onfocus="if(this.value=='search...') this.value='';" type="text">	</div>
+	<input name="task" value="search" type="hidden">
+	<input name="option" value="com_search" type="hidden">
+	<input name="Itemid" value="0" type="hidden">
+</form>					</div>
+				</div>
+			</div>
+		</div>
+			<div class="module">
+			<div>
+				<div>
+					<div>
+												    		<div id="sl_vert">
+        <form action="/index.php" method="post" name="login" id="form-login">
+                        <div id="sl_username">
+                <input id="modlgn_username" name="username" alt="username" size="10" value="Username" onfocus="if (this.value=='Username') this.value=''" onblur="if(this.value=='') { this.value='Username'; return false; }" type="text">
+			</div>
+            <div id="sl_pass">
+                <input id="modlgn_passwd" name="passwd" alt="password" size="10" value="Password" onfocus="if (this.value=='Password') this.value=''" onblur="if(this.value=='') { this.value='Password'; return false; }" type="password">
+			</div>
+                        
+                	<div id="sl_rememberme"><input name="remember" id="modlogn_remember" class="inputbox" value="yes" alt="Remember Me" checked="checked" type="checkbox"> Remember Me</div>
+                	            <div id="sl_submitbutton"><input name="Submit" class="button" value="Login" type="submit"></div>
+                                <div id="sl_lostpass"><a href="http://www.omnetpp.org/component/user/reset">
+                    Forgot your password?</a></div>
+			                                <div id="sl_lostpass"><a href="http://www.omnetpp.org/component/user/remind">
+                    Forgot your username?</a></div>
+			                                    <div id="sl_register"><a href="http://www.omnetpp.org/component/user/?task=register">
+					Create an account</a></div>
+                            
+                    
+            <input name="option" value="com_user" type="hidden">
+            <input name="task" value="login" type="hidden">
+            <input name="return" value="aHR0cDovL3d3dy5vbW5ldHBwLm9yZy8=" type="hidden">
+            <input name="c5aaf25ccb28773b2bbd3842f0b1f0ab" value="1" type="hidden">       </form>
+       </div>
+       					</div>
+				</div>
+			</div>
+		</div>
+	
+        </div>
+              </td>
+
+      <!-- full-width (2-column) intro -->
+      <td class="intro" colspan="2" valign="top">
+        
+                  <div>
+          		<div class="module">
+			<div>
+				<div>
+					<div>
+											<div style="text-align: justify;" mce_style="text-align: justify;"> 
+
+<p>Welcome to the OMNeT++ Community!</p>
+
+<p style="padding: 10px; background-color: rgb(236, 243, 247);" mce_style="padding: 10px; background-color: #ecf3f7;"><b>OMNeT++ 
+is an extensible, modular, component-based C++ simulation library
+and framework, primarily for building network simulators</b>.
+"Network" is meant in a broader sense that includes wired and wireless
+communication networks, on-chip networks, queueing networks, and so on.
+Domain-specific functionality such as support for sensor networks, wireless
+ad-hoc networks, Internet protocols, performance modeling, photonic networks, etc.,
+is provided by model frameworks, developed as independent projects.
+OMNeT++ offers an Eclipse-based IDE, a graphical runtime environment,
+and a host of other tools.
+There are extensions for real-time simulation, network emulation, alternative
+programming languages (Java, C#), database integration, SystemC
+integration, and several other functions.</p>
+
+<p>OMNeT++ is <a href="http://www.omnetpp.org/home/license" mce_href="/home/license">free</a>
+ for academic and non-profit use, and it is a widely used platform in 
+the global scientific community. Commercial users must obtain a license 
+from <a href="http://www.omnest.com/" mce_href="http://www.omnest.com">omnest.com</a>. <a href="http://www.omnetpp.org/home/what-is-omnet" mce_href="/home/what-is-omnet">More...</a><br mce_bogus="1"></p>
+
+<p><b>Featured Projects:</b></p>
+
+<p>&nbsp;&nbsp;&nbsp;<a href="http://inet.omnetpp.org/" mce_href="http://inet.omnetpp.org" target="_blank"><img src="OMNeT++%20Network%20Simulation%20Framework_files/inet32.png" mce_src="/images/logo/inet32.png" alt="INET Framework (Internet and LAN protocols)" border="0" width="79" height="32"></a>
+
+&nbsp;&nbsp;<a href="http://wiki.github.com/inetmanet/inetmanet" mce_href="http://wiki.github.com/inetmanet/inetmanet" target="_blank"><img src="OMNeT++%20Network%20Simulation%20Framework_files/inetmanet32.png" mce_src="/images/logo/inetmanet32.png" alt="INETMANET (mobile and ad-hoc networks)" border="0" width="88" height="32"></a>
+
+&nbsp;&nbsp;<a href="http://www.oversim.org/" mce_href="http://www.oversim.org" target="_blank"><img src="OMNeT++%20Network%20Simulation%20Framework_files/oversim32.png" mce_src="/images/logo/oversim32.png" alt="Oversim (peer-to-peer networks)" border="0" width="60" height="32"></a>
+
+&nbsp;&nbsp;<a href="http://www.kn.e-technik.tu-dortmund.de/content/view/232/lang,de/" mce_href="http://www.kn.e-technik.tu-dortmund.de/content/view/232/lang,de/" target="_blank"><img src="OMNeT++%20Network%20Simulation%20Framework_files/xmipv6_32.png" mce_src="/images/logo/xmipv6_32.png" alt="xMIPv6 (mobile IPv6)" border="0" width="60" height="32"></a>
+
+&nbsp;&nbsp; <a href="https://i72projekte.tm.uka.de/trac/ReaSE" mce_href="https://i72projekte.tm.uka.de/trac/ReaSE" target="_blank"><img src="OMNeT++%20Network%20Simulation%20Framework_files/rease32.png" mce_src="/images/logo/rease32.png" alt="ReaSE (realistic Internet simulations)" border="0" width="56" height="32"></a>
+
+&nbsp;&nbsp;<a href="http://mixim.sourceforge.net/" mce_href="http://mixim.sourceforge.net/" target="_blank"><img src="OMNeT++%20Network%20Simulation%20Framework_files/mixim32.png" mce_src="/images/logo/mixim32.png" alt="MiXiM (detailed wireless simulations)" border="0" width="93" height="32"></a>
+
+&nbsp;&nbsp; <a href="http://mobility-fw.sf.net/" mce_href="http://mobility-fw.sf.net" target="_blank"><img src="OMNeT++%20Network%20Simulation%20Framework_files/mf32.png" mce_src="/images/logo/mf32.png" alt="Mobility Framework (wireless and mobile simulations; obsoleted by MiXiM)" border="0" width="82" height="32"></a>
+
+&nbsp;&nbsp;<a href="http://castalia.npc.nicta.com.au/" mce_href="http://castalia.npc.nicta.com.au/" target="_blank"><img src="OMNeT++%20Network%20Simulation%20Framework_files/castalia32.png" mce_src="/images/logo/castalia32.png" alt="Castalia (wireless sensor and body area networks)" border="0" width="104" height="32"></a>
+
+&nbsp; <a href="http://www.omnetpp.org/models/catalog" mce_href="/models/catalog">More...</a>  </p>  
+
+<p><b>New users:</b> Watch the <a href="http://omnetpp.org/webdemo/ide/" target="_blank" mce_href="http://omnetpp.org/webdemo/ide/">screencast</a> for an introduction into the Simulation IDE, or see in the <a href="http://www.omnetpp.org/publications" mce_href="/publications">publications list</a> what OMNeT++ has been used for. Check out some <a target="_blank" mce_href="http://www.omnetpp.org/doc/omnetpp/tictoc-tutorial" href="http://www.omnetpp.org/doc/omnetpp/tictoc-tutorial">tutorials</a>, browse the <a mce_href="http://www.omnetpp.org/documentation" href="http://www.omnetpp.org/documentation">documentation</a>, watch <a target="_blank" mce_href="http://www.youtube.com/view_play_list?p=EDBBAEA836A0A89E" href="http://www.youtube.com/view_play_list?p=EDBBAEA836A0A89E">introductory videos</a>, and explore the featured <u>network simulation</u> projects (click the logos above)!</p>
+
+</div>					</div>
+				</div>
+			</div>
+		</div>
+	
+          </div>
+              </td>
+    </tr>
+
+    <tr>
+      <!-- content, user3, user1, user2, component and bottom blocks -->
+      <td id="contenttb" valign="top" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          
+          <tbody><tr align="left" valign="top">
+            <td colspan="3" style="padding: 5px 0pt;">
+              <div class="main">
+                            <table class="blog" cellpadding="0" cellspacing="0">
+
+<tbody><tr>
+	<td valign="top">
+		<table cellpadding="0" cellspacing="0" width="100%">
+		<tbody><tr>
+										<td class="article_column" valign="top" width="100%">
+				
+<table class="contentpaneopen">
+<tbody><tr>
+		<td class="contentheading" width="100%">
+					INET-HNRL: Optical, Wireless and Hybrid Networking Extensions for INET			</td>
+	
+	
+	
+		</tr>
+</tbody></table>
+<table class="contentpaneopen">
+
+
+<tbody><tr>
+	<td colspan="2" class="createdate" valign="top">
+		Friday, 17 December 2010 15:24	</td>
+</tr>
+
+
+<tr>
+<td colspan="2" valign="top">
+<p><i>From Kyeong Soo Kim:</i> This is to announce the INET-HNRL, a new fork of 
+INET Framework developed for hybrid networking research. INET-HNRL 
+provides new models in both the optical and the wireless networking areas 
+and their hybrid. Currently, the following models and research frameworks have been implemented:</p>
+<ul>
+<li>Models for the hybrid TDM/WDM-PON under the SUCCESS-HPON architecture;</li>
+<li>Comparative analysis framework based on the equivalent circuit rate 
+(ECR) for the study of next-generation optical access (NGOA) 
+architectures;</li>
+<li>Wi-Fi localization (currently integrating them into INET, which were formerly implemented based on INETMANET)</li>
+</ul>
+
+<p>The project homepage is at <a target="_blank" href="http://kyeongsoo.github.com/inet-hnrl/" mce_href="http://kyeongsoo.github.com/inet-hnrl/">http://kyeongsoo.github.com/inet-hnrl</a>,
+ where you can find a brief overview of each model/framework together 
+with all the relevant publications. The github project URL is <a target="blank" href="https://github.com/kyeongsoo/inet-hnrl" mce_href="https://github.com/kyeongsoo/inet-hnrl">https://github.com/kyeongsoo/inet-hnrl</a>.
+
+</p></td>
+</tr>
+
+
+<tr>
+	<td colspan="2">
+		<a href="http://www.omnetpp.org/component/content/article/9-software/3683-inet-hnrl-optical-wireless-and-hybrid-networking-extensions-for-inet" class="readon">
+			Read more...</a>
+	</td>
+</tr>
+
+</tbody></table>
+<span class="article_separator">&nbsp;</span>
+
+<table class="contentpaneopen">
+<tbody><tr>
+		<td class="contentheading" width="100%">
+					mCoA++: Multiple Care of Address Registration for xMIPv6			</td>
+	
+	
+	
+		</tr>
+</tbody></table>
+<table class="contentpaneopen">
+
+
+<tbody><tr>
+	<td colspan="2" class="createdate" valign="top">
+		Thursday, 16 December 2010 15:58	</td>
+</tr>
+
+
+<tr>
+<td colspan="2" valign="top">
+This post is to announce mCoA++, an extension of the <a target="_blank" mce_href="http://www.kn.e-technik.tu-dortmund.de/content/view/232/lang,de/" href="http://www.kn.e-technik.tu-dortmund.de/content/view/232/lang,de/">xMIPv6</a> Mobile IPv6 modeling framework. mCoA++ enables the registration of multiple care of addresses for Mobile 
+IPv6 nodes. The code has been developed by Bruno Sousa and Marco Silva
+ from Laboratory of Communications and Telematics (LCT) of University of
+ Coimbra, in Portugal. Project home page: <a target="_blank" mce_href="http://mcoa.dei.uc.pt/" href="http://mcoa.dei.uc.pt/">http://mcoa.dei.uc.pt</a>.<br></td>
+</tr>
+
+
+
+</tbody></table>
+<span class="article_separator">&nbsp;</span>
+
+<table class="contentpaneopen">
+<tbody><tr>
+		<td class="contentheading" width="100%">
+					Workshop Deadline Extended!			</td>
+	
+	
+	
+		</tr>
+</tbody></table>
+<table class="contentpaneopen">
+
+
+<tbody><tr>
+	<td colspan="2" class="createdate" valign="top">
+		Monday, 15 November 2010 11:39	</td>
+</tr>
+
+
+<tr>
+<td colspan="2" valign="top">
+The deadline for the next OMNeT++ Workshop has been extended -- the new deadline is <b><span style="color: red;" mce_style="color:red;">November 29th, 2010</span></b>. Please find the updated Call for Papers <a target="_blank" href="http://www.omnet-workshop.org/2011/Authors/CallForPapers" mce_href="http://www.omnet-workshop.org/2011/Authors/CallForPapers">here</a>.<br></td>
+</tr>
+
+
+
+</tbody></table>
+<span class="article_separator">&nbsp;</span>
+
+<table class="contentpaneopen">
+<tbody><tr>
+		<td class="contentheading" width="100%">
+					VoIPTool 2.0 released			</td>
+	
+	
+	
+		</tr>
+</tbody></table>
+<table class="contentpaneopen">
+
+
+<tbody><tr>
+	<td colspan="2" class="createdate" valign="top">
+		Sunday, 07 November 2010 00:00	</td>
+</tr>
+
+
+<tr>
+<td colspan="2" valign="top">
+This is to announce VoIPTool 2.0, a realistic VoIP traffic generation 
+and evaluation tool for the INET Framework and OMNeT++ 4.1. The package 
+is an evolution of <a target="_blank" mce_href="http://www.tkn.tu-berlin.de/research/omnetVoipTool/" href="http://www.tkn.tu-berlin.de/research/omnetVoipTool/">VoIPTool 1.x</a> from Mathias Böhge and Martin Renwanz (TKN, TU Berlin): the code has been moved to github (as project <a target="_blank" href="https://github.com/inet-framework/voiptool" mce_href="https://github.com/inet-framework/voiptool">inet-framework/voiptool</a>),
+ ported to OMNeT++ 4.x, and its external interface (parameters, etc.) 
+and implementation has been revised. The package provides a VoIP source 
+and a VoIP sink module as UDP apps. The source app transmits the 
+contents of an audio file (mp3, wav, etc.) to the sink app as VoIP 
+traffic, which can save it to an output audio file for later evaluation.
+ Current maintainers are Zoltán Böjthe and Andras Varga. <a target="_blank" mce_href="https://github.com/inet-framework/voiptool/archives/master" href="https://github.com/downloads/inet-framework/voiptool/voiptool-2.0-src.tgz">Download</a>.<br></td>
+</tr>
+
+
+
+</tbody></table>
+<span class="article_separator">&nbsp;</span>
+
+<table class="contentpaneopen">
+<tbody><tr>
+		<td class="contentheading" width="100%">
+					Announcement: OverSim-20101103 release			</td>
+	
+	
+	
+		</tr>
+</tbody></table>
+<table class="contentpaneopen">
+
+
+<tbody><tr>
+	<td colspan="2" class="createdate" valign="top">
+		Thursday, 04 November 2010 00:00	</td>
+</tr>
+
+
+<tr>
+<td colspan="2" valign="top">
+<p>Ingmar Baumgart has announced OverSim release 20101103. It brings
+support for the ReaSE Internet topology generator, experimental
+support for TCP and IPv6 in SimpleUnderlay and InetUnderlay, the N-Tree
+overlay protocol, recursive routing for Kademlia, and many other changes
+and improvements (details below). You can download OverSim-20101103
+and the patched INET framework INET-OverSim-20101019 from the <a href="http://www.oversim.org/wiki/OverSimDownload" mce_href="http://www.oversim.org/wiki/OverSimDownload" target="_blank">download area of oversim.org</a>.</p>
+
+</td>
+</tr>
+
+
+<tr>
+	<td colspan="2">
+		<a href="http://www.omnetpp.org/component/content/article/8-news/3678-announcement-oversim-20101103-release" class="readon">
+			Read more...</a>
+	</td>
+</tr>
+
+</tbody></table>
+<span class="article_separator">&nbsp;</span>
+
+<table class="contentpaneopen">
+<tbody><tr>
+		<td class="contentheading" width="100%">
+					B-MAC for MiXiM and OMNeT++ 4 available now			</td>
+	
+	
+	
+		</tr>
+</tbody></table>
+<table class="contentpaneopen">
+
+
+<tbody><tr>
+	<td colspan="2" class="createdate" valign="top">
+		Monday, 25 October 2010 00:00	</td>
+</tr>
+
+
+<tr>
+<td colspan="2" valign="top">
+<p><i>From Anna Förster:</i> I finally found some time to implement B-MAC for MiXiM
+and OMNeT++4. Please find the files and the docs here: <a href="http://linux3.dti.supsi.ch/%7Eafoerste/downloads.html" mce_href="http://linux3.dti.supsi.ch/%7Eafoerste/downloads.html" target="_blank">http://linux3.dti.supsi.ch/~afoerste/downloads.html</a>. Please report all possible bugs, troubles, etc. to the mailing list in order to help also others to resolve their problems.</p></td>
+</tr>
+
+
+
+</tbody></table>
+<span class="article_separator">&nbsp;</span>
+
+<table class="contentpaneopen">
+<tbody><tr>
+		<td class="contentheading" width="100%">
+					MiXiM 2.0 Released, Contains Support for INET Integration			</td>
+	
+	
+	
+		</tr>
+</tbody></table>
+<table class="contentpaneopen">
+
+
+<tbody><tr>
+	<td colspan="2" class="createdate" valign="top">
+		Wednesday, 20 October 2010 00:00	</td>
+</tr>
+
+
+<tr>
+<td colspan="2" valign="top">
+<p>The MiXiM team has released MiXiM 2.0. The main highlight of this release
+is MiXiM - INET Framework integration. MiXiM 2.0 contains a "Mixnet"
+example simulation that demonstrates how one can use MiXiM network interface
+cards (NICs) together with higher layer protocols (IP, TCP, UDP) of the INET Framework.
+MiXiM provides the necessary modules to make the two frameworks compatible,
+as well as documentation and examples how to build simulations using both frameworks.
+The new release also fixes some bugs and contains small interface changes.
+An overview of the most important changes is given after the break.</p>
+
+<p>MiXiM is an OMNeT++ modeling framework created for mobile and fixed wireless
+networks (wireless sensor networks, body area networks, ad hoc networks,
+vehicular networks, etc.). It offers detailed models of radio wave propagation,
+interference estimation, radio transceiver power consumption and wireless
+MAC protocols.</p>
+
+<p>The new MiXiM release can be downloaded from
+<a href="http://sourceforge.net/projects/mixim/files/mixim/MiXiM%202.0/MiXiM-2.0.tar.gz/download" mce_href="http://sourceforge.net/projects/mixim/files/mixim/MiXiM%202.0/MiXiM-2.0.tar.gz/download">sourceforge.net</a>.
+In order to use MiXiM together with INET, an INET version without the
+wireless-related classes is needed, which can be downloaded from
+<a href="http://github.com/mixim/inet4mixnet" mce_href="http://github.com/mixim/inet4mixnet">here</a>. <br></p><p></p></td>
+</tr>
+
+
+<tr>
+	<td colspan="2">
+		<a href="http://www.omnetpp.org/component/content/article/9-software/3676-mixim-20-released" class="readon">
+			Read more...</a>
+	</td>
+</tr>
+
+</tbody></table>
+<span class="article_separator">&nbsp;</span>
+
+<table class="contentpaneopen">
+<tbody><tr>
+		<td class="contentheading" width="100%">
+					Call for Papers -- 4th International Workshop on OMNeT++			</td>
+	
+	
+	
+		</tr>
+</tbody></table>
+<table class="contentpaneopen">
+
+
+<tbody><tr>
+	<td colspan="2" class="createdate" valign="top">
+		Tuesday, 28 September 2010 13:04	</td>
+</tr>
+
+
+<tr>
+<td colspan="2" valign="top">
+<p><img src="OMNeT++%20Network%20Simulation%20Framework_files/workshop-logo-80.png" mce_src="/images/stories/workshop-logo-80.png" style="float: left; margin-right: 10px;" mce_style="float:left; margin-right:10px">The <a target="_blank" mce_href="http://www.omnet-workshop.org/2011/" href="http://www.omnet-workshop.org/2011/"><b>4th International OMNeT++ Workshop</b></a>
+ will be held on March 21, 2011 in Barcelona, Spain. You can submit full
+ papers (up to 8 pages), short papers (up to 4 pages) and code 
+contribution papers <sup>NEW!</sup> (2 pages) until <u>November 15, 2010</u>.
+ Participate, show your work, meet others who work with OMNeT++, and 
+exchange ideas! All accepted full and short papers will be indexed, and 
+selected papers will be considered for an international journal 
+publication. The workshop will be held in conjunction with <a target="_blank" mce_href="http://www.simutools.org/2011" href="http://www.simutools.org/2011">SIMUTools&nbsp;2011</a>. Read the full <i><a href="http://www.omnet-workshop.org/2011/Authors/CallForPapers" mce_href="http://www.omnet-workshop.org/2011/Authors/CallForPapers">Call for Papers</a></i>!</p></td>
+</tr>
+
+
+
+</tbody></table>
+<span class="article_separator">&nbsp;</span>
+
+<table class="contentpaneopen">
+<tbody><tr>
+		<td class="contentheading" width="100%">
+					Simple Obstacle Model for INET and MiXiM			</td>
+	
+	
+	
+		</tr>
+</tbody></table>
+<table class="contentpaneopen">
+
+
+<tbody><tr>
+	<td colspan="2" class="createdate" valign="top">
+		Tuesday, 28 September 2010 12:35	</td>
+</tr>
+
+
+<tr>
+<td colspan="2" valign="top">
+<i>From Christoph Sommer:</i> We've now prepared and uploaded the codebase of our <b>"Computationally Inexpensive Empirical Model of IEEE 802.11p Radio Shadowing in Urban Environments"</b> for public consumption. The obstacle model lives at <a target="_blank" href="http://www7.informatik.uni-erlangen.de/%7Esommer/omnet/obstacles/" mce_href="http://www7.informatik.uni-erlangen.de/%7Esommer/omnet/obstacles/">http://www7.informatik.uni-erlangen.de/~sommer/omnet/obstacles/</a>,
+ and can be downloaded for both the INET Framework and for MiXiM. The 
+code is GPL-licensed, so feel free to integrate it with any compatible 
+framework. An in-depth documentation of the model, as well as the 
+results of extensive experiments we performed using IEEE 802.11p radios 
+mounted in cars can be found in the Technical Report of the same name, 
+published at <a target="_blank" mce_href="http://www7.informatik.uni-erlangen.de/~dressler/bib/inc/sommer2010computationally-abstract.shtml" href="http://www7.informatik.uni-erlangen.de/%7Edressler/bib/inc/sommer2010computationally-abstract.shtml">http://www7.informatik.uni-erlangen.de/~dressler/bib/inc/sommer2010computationally-abstract.shtml</a>. If you have any questions, don't hesitate to get back to me!<br mce_bogus="1"></td>
+</tr>
+
+
+
+</tbody></table>
+<span class="article_separator">&nbsp;</span>
+
+<table class="contentpaneopen">
+<tbody><tr>
+		<td class="contentheading" width="100%">
+					Castalia 3.0 released			</td>
+	
+	
+	
+		</tr>
+</tbody></table>
+<table class="contentpaneopen">
+
+
+<tbody><tr>
+	<td colspan="2" class="createdate" valign="top">
+		Thursday, 12 August 2010 00:00	</td>
+</tr>
+
+
+<tr>
+<td colspan="2" valign="top">
+<p><i>From the Castalia team:</i> Castalia 3.0 is finally here! It runs 
+with OMNeT 4.x and it offers a complete new way to run simulations and 
+view the results. It has a brand new radio module. It implements the 
+Baseline MAC for Body Area Networks, proposed by the IEEE 802.15 Task 
+Group 6. Read the new User's Manual to get started! The new release can 
+be downloaded from the <a target="_blank" href="http://castalia.npc.nicta.com.au/index.php" mce_href="http://castalia.npc.nicta.com.au/index.php">Castalia home page</a>.</p>
+
+<p>Castalia is a simulator for wireless sensor networks (WSNs), body 
+area networks (BANs), and generally networks of low-power embedded 
+devices; it is developed at NICTA Australia.</p></td>
+</tr>
+
+
+
+</tbody></table>
+<span class="article_separator">&nbsp;</span>
+</td>
+								
+		</tr>
+		</tbody></table>
+	</td>
+</tr>
+<tr>
+	<td valign="top">
+		<div class="blog_more">
+			<div>
+	<strong>More Articles...</strong>
+</div>
+<ul>
+	<li>
+		<a class="blogsection" href="http://www.omnetpp.org/component/content/article/9-software/3672-google-earth-demo">
+			Google Earth Demo</a>
+	</li>
+	<li>
+		<a class="blogsection" href="http://www.omnetpp.org/component/content/article/8-news/3671-todo-new-releases-inet-20100723-r-package-02">
+			New Releases: INET-20100723, R package 0.2</a>
+	</li>
+	<li>
+		<a class="blogsection" href="http://www.omnetpp.org/component/content/article/9-software/3670-phoenixsim-a-simulator-for-photonic-interconnection-networks">
+			PhoenixSim: A Simulator for Photonic Interconnection Networks</a>
+	</li>
+	<li>
+		<a class="blogsection" href="http://www.omnetpp.org/component/content/article/9-software/3669-mixim-12-released">
+			MiXiM 1.2 Released</a>
+	</li>
+	<li>
+		<a class="blogsection" href="http://www.omnetpp.org/component/content/article/8-news/3668-network-simulation-book-featuring-omnet">
+			Network Simulation Book Featuring OMNeT++</a>
+	</li>
+</ul>
+		</div>
+	</td>
+</tr>
+
+<tr>
+	<td align="center" valign="top">
+		<span class="pagination">« <span>Start</span><span>Prev</span><strong><span>1</span></strong><strong><a href="http://www.omnetpp.org/index.php?start=10" title="2">2</a></strong><strong><a href="http://www.omnetpp.org/index.php?start=20" title="3">3</a></strong><strong><a href="http://www.omnetpp.org/index.php?start=30" title="4">4</a></strong><strong><a href="http://www.omnetpp.org/index.php?start=40" title="5">5</a></strong><strong><a href="http://www.omnetpp.org/index.php?start=50" title="6">6</a></strong><strong><a href="http://www.omnetpp.org/index.php?start=60" title="7">7</a></strong><strong><a href="http://www.omnetpp.org/index.php?start=70" title="8">8</a></strong><strong><a href="http://www.omnetpp.org/index.php?start=80" title="9">9</a></strong><strong><a href="http://www.omnetpp.org/index.php?start=90" title="10">10</a></strong><a href="http://www.omnetpp.org/index.php?start=10" title="Next">Next</a><a href="http://www.omnetpp.org/index.php?start=220" title="End">End</a> »</span>		<br><br>
+	</td>
+</tr>
+<tr>
+	<td align="center" valign="top">
+		Page 1 of 23	</td>
+</tr>
+</tbody></table>
+
+                            </div>
+            </td>
+          </tr>
+
+                  </tbody></table>
+      </td>
+
+      <!-- right column -->
+              <td class="rightcol" valign="top">
+          <div>
+          		<div class="module">
+			<div>
+				<div>
+					<div>
+													<h3>New Downloads</h3>
+											<ul><li><a class="mod_docman_lister_link" href="http://www.omnetpp.org/omnetpp/doc_details/2228-mcoa-multiple-care-of-address-registration-for-xmipv6">mCoA++: Multiple Care of Address Registration for xMIPv6</a></li><li><a class="mod_docman_lister_link" href="http://www.omnetpp.org/omnetpp/doc_details/2227-inet-hnrl">INET-HNRL</a></li><li><a class="mod_docman_lister_link" href="http://www.omnetpp.org/omnetpp/doc_details/2226-google-earth-demo">Google Earth Demo</a></li><li><a class="mod_docman_lister_link" href="http://www.omnetpp.org/omnetpp/doc_details/2225-omnetpp-r-package-version-02-win32">omnetpp R package, version 0.2 (win32)</a></li><li><a class="mod_docman_lister_link" href="http://www.omnetpp.org/omnetpp/doc_details/2224-omnetpp-r-package-version-02-src">omnetpp R package, version 0.2 (src)</a></li></ul>					</div>
+				</div>
+			</div>
+		</div>
+			<div class="module">
+			<div>
+				<div>
+					<div>
+													<h3>Mailing List</h3>
+											<center>
+<form action="http://groups.google.com/group/omnetpp/boxsubscribe">
+  <input name="email" class="inputbox" onfocus="if(this.value=='your e-mail address') this.value='';" onblur="if(this.value=='') this.value='your e-mail address';" value="your e-mail address" style="width: 142px; background-color: rgb(255, 255, 255); color: rgb(102, 102, 102); padding-left: 3px; padding-right: 3px;" type="text">
+  <input name="sub" value="Subscribe" type="submit">
+</form>
+<br>
+Send messages to: <sup><a href="mailto:omnetpp@googlegroups.com" mce_href="mailto:omnetpp@googlegroups.com">omnetpp@googlegroups.com</a></sup> <br>
+or <a href="http://groups.google.com/group/omnetpp/post" target="_blank" mce_href="http://groups.google.com/group/omnetpp/post">post from the web</a>.<br><br>
+
+You can manage your subscription <a href="http://groups.google.com/group/omnetpp/subscribe" mce_href="http://groups.google.com/group/omnetpp/subscribe" target="_blank">here</a>.<br><br>
+
+Follow using: <a href="http://groups.google.com/group/omnetpp/feeds" mce_href="http://groups.google.com/group/omnetpp/feeds" title="XML" style="text-decoration: none;" mce_style="text-decoration: none;" target="_blank">
+<span class="mrgall0" style="border-style: solid; border-color: rgb(255, 204, 153) rgb(102, 51, 0) rgb(51, 51, 0) rgb(255, 153, 102); border-width: 1px; padding: 0pt 3px; background-color: rgb(255, 102, 0); background-image: none; background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; -moz-background-size: auto auto; font: bold 10px verdana,sans-serif; color: rgb(255, 255, 255); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" mce_style="border-style: solid; border-color: #ffcc99 #663300 #333300 #ff9966; border-width: 1px; padding: 0pt 3px; background: #ff6600 none repeat scroll 0% 0%; font-family: verdana,sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 10px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: #ffffff; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">XML</span>
+</a>
+</center>					</div>
+				</div>
+			</div>
+		</div>
+			<div class="module">
+			<div>
+				<div>
+					<div>
+													<h3>Mailing List Feed</h3>
+											<div style="direction: ltr; text-align: left ! important;">
+	<table class="moduletable" cellpadding="0" cellspacing="0">
+		<tbody><tr>
+		<td>
+			<ul class="newsfeed">
+							<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/07bc2115badee8df/d193ff6f14e4a518?show_docid=d193ff6f14e4a518" target="_blank">
+					About stringpool</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/ad1da6ed2ffa96bf/11c7e8a57bf59f0b?show_docid=11c7e8a57bf59f0b" target="_blank">
+					Throughput Network example in INET</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/ce214627731a6c80/7790c1cfff863adb?show_docid=7790c1cfff863adb" target="_blank">
+					Parameter for Nodes -- Assign additional memory to node</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/b50e1086f5e862ef/d26dd464d55eba1e?show_docid=d26dd464d55eba1e" target="_blank">
+					clustering in manet</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/52e44ceb8f09227b/b1ca61295282cd75?show_docid=b1ca61295282cd75" target="_blank">
+					scheduling link state routing packets(inet omnet4)</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/c871315a823e1ae5/a00ff70f26da704d?show_docid=a00ff70f26da704d" target="_blank">
+					module MobileHost (Authenticator submodule)</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/61c234e63dcfa325/5d8b71eaafcde99b?show_docid=5d8b71eaafcde99b" target="_blank">
+					Running different simulations all together</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/3b64b86f0997384a/6a20ff8d50c987a1?show_docid=6a20ff8d50c987a1" target="_blank">
+					Calling initialize fn in different stages</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/5beecd5e79899978/6db21f1a80ce0369?show_docid=6db21f1a80ce0369" target="_blank">
+					clustring</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/aa5c49a5112f5838/f920e55b849fcef4?show_docid=f920e55b849fcef4" target="_blank">
+					Shortest path Algorithms</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/e636a9088c828c4d/b1015ef7130325e1?show_docid=b1015ef7130325e1" target="_blank">
+					add bmac to mixim</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/09f6a0a213b00d93/2a0775638209dfec?show_docid=2a0775638209dfec" target="_blank">
+					how to add errors on Ethernet line?</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/2746520503dc6119/038aa15cd38073ca?show_docid=038aa15cd38073ca" target="_blank">
+					Omnet for cognitive radio routing</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/3111ed4c1f131979/fbb94cce65688114?show_docid=fbb94cce65688114" target="_blank">
+					PingReply not received</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/f8ab6bf979b51feb/bb2e78c6b8bf7f5c?show_docid=bb2e78c6b8bf7f5c" target="_blank">
+					hello</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/30f7cb3055d5812a/cce6bc77b74bc266?show_docid=cce6bc77b74bc266" target="_blank">
+					Tictoc gives error</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/2258306d39d00187/0ae3a99b7a27664d?show_docid=0ae3a99b7a27664d" target="_blank">
+					Testing Tcp Reno with SACK Option</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/503f9e2187d59b22/b812e110a9b029e8?show_docid=b812e110a9b029e8" target="_blank">
+					for cration of wireless sensor network</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/a777a35fa76c59b9/af0c45beac869ed6?show_docid=af0c45beac869ed6" target="_blank">
+					Question</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/956dda4f42954502/5eb42c1c01523822?show_docid=5eb42c1c01523822" target="_blank">
+					Inetmanet: application continuously sends the same ping message</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/170d7b708cd9fca7/ff6cac3ffe0c4db8?show_docid=ff6cac3ffe0c4db8" target="_blank">
+					packet redundancy check before rebroadcasting</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/22e3360dbf60fe23/594b126bdf86983f?show_docid=594b126bdf86983f" target="_blank">
+					Happy New Year, Everyone.</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/13483fdc34cb3690/ae24559336375e1f?show_docid=ae24559336375e1f" target="_blank">
+					Regarding Omnetpp</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/dcd394519be50258/487cfe246c7ec73a?show_docid=487cfe246c7ec73a" target="_blank">
+					please help me ,its urgent</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/9c7484d3ffaa0b21/c6f669849aca7880?show_docid=c6f669849aca7880" target="_blank">
+					Saturation Throughput 802.11</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/35aa9c17a7cdc8c4/62fe4fb598761ff1?show_docid=62fe4fb598761ff1" target="_blank">
+					run n times a simulation</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/a4afa4d2d4c28eea/a6706b49c19b3f77?show_docid=a6706b49c19b3f77" target="_blank">
+					shortest path</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/a5adf7ac2a83581a/f09829ffaca97da0?show_docid=f09829ffaca97da0" target="_blank">
+					Accessing Queue length of ppp[interface] from TED module</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/51cc0634f7c6dee7/e70fc4342b273641?show_docid=e70fc4342b273641" target="_blank">
+					deleta some nodes</a>
+								</li>
+								<li>
+									<a href="http://groups.google.com/group/omnetpp/browse_thread/thread/8f49373edad9913d/d2822e951578b673?show_docid=d2822e951578b673" target="_blank">
+					How to get my Run Number ??</a>
+								</li>
+							</ul>
+		</td>
+		</tr>
+	</tbody></table>
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+          </div>
+        </td>
+          </tr>
+  </tbody></table>
+
+  <div class="foot">
+        <div class="footer_left">
+    		<div class="module">
+			<div>
+				<div>
+					<div>
+											<p>Copyright© 2001-2009. OMNeT++ Community - www.omnetpp.org<br></p>					</div>
+				</div>
+			</div>
+		</div>
+			<div class="module">
+			<div>
+				<div>
+					<div>
+											<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="OMNeT++%20Network%20Simulation%20Framework_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-240922-2");
+pageTracker._setDomainName("omnetpp.org");
+pageTracker._trackPageview();
+} catch(err) {}</script>					</div>
+				</div>
+			</div>
+		</div>
+	
+    </div>
+      </div>
+
+</body></html>

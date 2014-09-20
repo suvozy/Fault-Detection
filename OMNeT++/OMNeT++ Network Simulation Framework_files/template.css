@@ -1,0 +1,809 @@
+/**
+author: rgb(raduga) http://mambasana.ru
+**/
+
+/**#################### DEFAULT and FORMS CSS ####################**/
+
+body,html {
+  padding          : 0;
+  margin           : 0;
+  background-color : #ffffff;
+  min-width        : 860px;
+}
+
+td, tr, p, div {
+  font-family      :  Arial, Helvetica, sans-serif;
+  color            : #222222;
+  font-size        : 13px;
+  line-height      : 16px;
+}
+
+hr {
+  color            : #999999;
+  height           : 1px;
+  width            : 100%;
+}
+
+
+a:hover {
+  color            : #999999;
+  text-decoration  : underline;
+}
+
+ul {
+  margin           : 2px;
+  padding-left     : 10px;
+  list-style       : none;
+}
+
+
+form {
+  margin           : 0;
+  padding          : 0;
+}
+
+.search .inputbox {
+  color : #666666;
+  background: #ffffff;
+  width: 142px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.inputbox {
+  color        : #000000;
+  background   : #ECEEEF;
+  border       : 1px solid #cccccc;
+  margin       : 3px 0;
+}
+
+form select.button{
+  color        : #000000;
+  background   : #ECEEEF;
+}
+
+option {
+  background   : #ffffff;
+}
+
+/**#################### Joomla CSS ####################**/
+
+/** Buttons **/
+
+.back_button {
+  font-size        : 12px;
+  font-weight      : normal;
+  padding-bottom   : 3px;
+  margin-right     : 4px;
+  float            : right;
+  line-height      : 20px;
+
+}
+div.back_button a{
+  text-decoration  : none;
+}
+
+
+
+/** Contact **/
+
+.contact_email  {
+  width            : 100%;
+}
+
+.contact_email .inputbox {
+}
+
+
+
+/** Module table  **/
+
+table.moduletable {
+  margin  : 0 0 8px 0;
+  width   : 100%;
+}
+
+table.moduletable th {
+  font-family    : Arial, Verdana,  Helvetica, sans-serif;
+  font-size      : 14px;
+  font-weight    : bold;
+  text-align     : center;
+  width          : 100%;
+  color          : #EBEFF2;
+  padding        : 2px;
+  line-height    : 25px;
+  background     : url(../images/mod_left.gif) #414141 repeat-x top left;
+  height: 29px;
+}
+
+table.moduletable td {
+  padding-top: 2px;
+}
+
+
+div.module, div.module_menu{
+  text-align: left;
+  margin: 0 0 20px 0;
+}
+
+div.module h3, div.module_menu h3 {
+  font-family        : Arial, Verdana,  Helvetica, sans-serif;
+  font-size          : 14px;
+  font-weight        : bold;
+  text-align         : center;
+  width              : 100%;
+  color              : #EBEFF2;
+  line-height        : 27px;
+  background         : url(../images/mod_left.gif) #414141 repeat-x top left;
+  height             : 29px;
+  margin             : 0 0 15px 0;
+}
+
+.contentmod {
+  text-align   : left;
+  padding      : 8px 0;
+}
+
+.contentmod td {
+  padding      : 5px;
+}
+
+.contentmod table.moduletable {
+  margin           : 0 0 8px 0;
+  width            : 100%;
+  border           : 1px solid #DDE1E3;
+  background       : #ECEEEF;
+}
+
+
+.contentmod table.moduletable th{
+  font-size          : 14px;
+  font-weight        : bold;
+  text-align         : center;
+  width              : 100%;
+  color              : #616161;
+  padding            : 2px;
+  line-height        : 25px;
+  border-bottom      : 1px solid #DDE1E3;
+  background         : url(../images/mod_center.gif) #E7EAEC repeat-x top left;
+}
+
+
+/** Read more **/
+
+a.readon:hover {
+  color            : #999999;
+  font-size        : 12px;
+  background       : url(../images/indent1.png) no-repeat;
+  white-space      : normal;
+  font-weight      : normal;
+  padding          : 1px 0 1px 10px;
+  line-height      : 15px;
+  text-decoration  : none;
+  border-left      : 2px solid #999999;
+}
+
+
+/** Page navigation **/
+
+.pagenavcounter {
+  font-size        : 11px;
+  color            : #999999;
+}
+
+.pagenavbar {
+  border-top       : 1px solid #999999;
+  padding          : 2px;
+}
+
+.pagination span { padding: 2px; }
+
+.pagination a    { padding: 2px; }
+
+.pagination {
+  font-weight      : normal;
+}
+
+a.pagination:link, a.pagenav:visited {
+  font-size        : 11px;
+  color            : #999999;
+  text-decoration  : none;
+}
+
+a.pagination:hover {
+  font-size        : 11px;
+  color            : #af2222;
+  text-decoration  : none;
+}
+
+table.contenttoc {
+  border           : 1px solid #dcdcdc;
+  background       : #f3f5f6;
+  padding          : 0;
+  margin-left      : 2px;
+  margin-bottom    : 2px;
+}
+
+table.contenttoc th{
+  margin           : 0;
+  padding          : 2px;
+  background       : #e7eaec;
+  color            : #222222;
+}
+
+table.contenttoc td a:link, table.contenttoc td a:visited{
+  padding-left        : 12px !important;
+  padding-left        : 0;
+  text-indent         : 12px;
+  text-decoration      : none;
+}
+
+
+/** Pathway **/
+
+.pathway {
+  font-size        : 11px;
+  color            : #222222;
+  padding-left     : 5px;
+
+}
+
+a.pathway:link, a.pathway:visited {
+  font-size        : 11px;
+  padding-left     : 0;
+  font-weight      : bold;
+  text-decoration  : underline;
+}
+
+a.pathway:hover {
+  font-size        : 11px;
+  padding-left     : 0;
+  font-weight      : bold;
+
+}
+.pathway img {
+  padding-top     : 5px;
+
+}
+
+
+/** Content **/
+
+
+.sectiontableheader {
+  font-weight      : bold;
+  letter-spacing   : 1px;
+  color            : #ffffff;
+  background       : #414141;
+  padding          : 3px 5px;
+  border           : 1px solid #ffffff;
+}
+
+td.sectiontableheader a {
+  color            : #F6F7F9;
+}
+
+.sectiontableentry1 {
+  vertical-align   : top;
+  background       : #f6f6f6;
+  border-bottom    : 1px solid #ffffff;
+  line-height      : 20px;
+
+}
+
+.sectiontableentry1 td, .sectiontableentry2 td{
+  padding          : 2px 5px;
+  border-bottom    : 1px solid #ffffff;
+  line-height      : 20px;
+
+}
+
+.sectiontableentry2 {
+  vertical-align   : top;
+  border-bottom    : 1px solid #ffffff;
+  background       : #f0f0f0;
+  line-height      : 20px;
+}
+.sectiontableentry1 img {
+  margin: 2px 0;
+}
+.sectiontableentry2 img {
+ margin: 2px 0;
+}
+
+
+a.category:link, a.category:visited {
+  font-size        : 12px;
+  font-weight      : normal;
+  padding: 5px;
+}
+
+
+.small {
+  font-size        : 11px;
+  color            : #999999;
+}
+.smalldark {
+  font-size        : 11px;
+  color            : #222222;
+}
+.createdate, .modifydate {
+  font-size        : 11px;
+  color            : #666666;
+  font-weight      : normal;
+  text-align       : left;
+  width            : 100%;
+}
+.content_vote {
+  font-size        : 11px;
+  height           : 22px;
+  padding          : 2px 0;
+}
+.content_rating {
+  font-size        : 11px;
+  color            : #999999;
+}
+
+table.content {
+  width            : 100%;
+  padding          : 0;
+  border-collapse  : collapse;
+  border-spacing   : 0;
+  margin-bottom    : 10px;
+}
+
+table.contentpane {
+  width            : 100%;
+  border-spacing   : 0;
+  padding-left     : 5px;
+  padding-right    : 5px;
+  margin-bottom    : 5px;
+}
+
+table.contentpaneopen {
+  width            : 100%;
+  border-spacing   : 0;
+  padding-left     : 5px;
+  padding-right    : 5px;
+  margin-bottom    : 5px;
+}
+
+.contentheading {
+  font-family      : Arial, Verdana, Helvetica, sans-serif;
+  width            : 100%;
+  font-size        : 17px;
+  font-weight      : bold;
+  line-height      : 21px;
+  text-align       : left;
+  text-indent      : 0;
+  color            : #616161;
+  padding          : 3px;
+  margin           : 3px 0;
+  background       : #F3F5F6;
+}
+
+.contentheading a {
+  text-decoration:none;
+}
+
+.componentheading {
+  font-family      : Arial, Verdana, Helvetica, sans-serif;
+  width            : auto;
+  font-size        : 17px;
+  font-weight      : bold;
+  line-height      : 21px;
+  text-transform   : uppercase;
+  text-align       : left;
+  color            : #616161;
+  padding          : 3px;
+  margin           : 5px !important;
+  margin           : 5px 1px;
+  background       : #ECEEEF;
+}
+
+.contentdescription {
+  width          : auto !important;
+  margin         : 0;
+  padding        : 0;
+  padding-top    : 5px;
+  text-align     : left;
+}
+
+.blog_more {
+  margin   : 10px 0 7px 7px;
+}
+
+.buttonheading {
+  padding          : 0 2px;
+  background       : #F3F5F6;
+}
+
+.buttonheading img {
+  border-width: 0;
+}
+
+.blog {
+  width:100%;
+}
+
+.intro {
+  padding  : 0px 15px 5px 15px;
+}
+
+/** Polls **/
+
+
+.poll {
+    color       : #222222;
+    line-height : 13px;
+    font-weight : normal;
+      text-align  : left;
+}
+
+.pollstableborder{
+  border-color     : #999999;
+  text-align:left;
+}
+
+/** CSS for Mainmenu **/
+
+.module_menu ul, .module_menu ul li {
+  background-image : none;
+  list-slyle       : none;
+  display          : block;
+  width            : auto !important;
+  width            : 100%;
+  margin           : 1px 0;
+  padding          : 0;
+  font-size        : 12px;
+  background       : none;
+  text-indent      : 10px;
+}
+
+.module_menu ul li a, .module_menu ul li a:link, .module_menu ul li a:visited {
+  display          : block;
+  font-size        : 14px;
+  border-bottom    : 1px solid #DCDFE1;
+  font-weight      : normal;
+  padding          : 2px 0;
+  color            : #666666;
+  padding-left     : 0px;
+  text-decoration  : none;
+}
+
+.module_menu ul li a:hover {
+  border-bottom    : 1px solid #DCDFE1;
+  font-size        : 14px;
+  font-weight      : normal;
+  color            : #666666;
+  text-decoration  : none;
+  padding-left     : 0px;
+  text-decoration  : none;
+  background       : #ECEEEF;
+}
+
+.module_menu ul li ul li a:link, .module_menu ul li ul li a:visited, .module_menu ul li ul li ul li a:link, .module_menu ul li ul li ul li a:visited {
+  display          : block;
+  font-size        : 12px;
+  font-weight      : bold;
+  color            : #999999;
+  padding          : 3px 1px 3px 5px;
+  margin           : 3px;
+  text-decoration  : none;
+  text-indent      : 10px;
+  border: none;
+}
+
+.module_menu ul li ul li a:hover, .module_menu ul li ul li ul li a:hover {
+  background:none;
+  font-size        : 12px;
+  font-weight      : normal;
+  color            : #666666;
+  text-decoration  : none;
+  text-indent      : 10px;
+
+}
+
+.module_menu ul li.active ul li a:link, .module_menu ul li.active ul li a:visited, .module_menu ul li.active ul li ul li a:link, .module_menu ul li.active ul li ul li a:visited {
+  background:#ECEEEF;
+  font-size        : 12px;
+  font-weight      : normal;
+  color            : #666666;
+  text-decoration  : none;
+  text-indent      : 10px;
+}
+
+
+/** Topmenu  **/
+
+ul#mainlevel-nav {
+  list-style       : none;
+  margin           : 0;
+  padding          : 0;
+  font-size        : 14px;
+}
+
+#mainlevel-nav li {
+  float            : center;
+  display          : inline;
+  list-style       : none;
+  background-image : none;
+  width            : auto;
+  color            : #ffffff;
+}
+
+#mainlevel-nav li a {
+  display          : inline;
+  width            : auto;
+  background       : #2C2C2C;
+  padding          : 10px 6px 10px 6px;
+  color            : #ffffff;
+  text-decoration  : none;
+  font-weight      : normal;
+  line-height      : 36px !important;
+  _height          :0;
+}
+
+ul#mainlevel-nav li #active_menu-nav:hover {
+  cursor           : pointer;
+  position         : relative;
+  width            : auto;
+  background       : #000000;
+  padding          : 10px 6px 10px 6px;
+  color            : #ffffff;
+  text-decoration  : none;
+}
+
+
+/** images **/
+
+div.mosimage { margin: 5px; }
+div.mosimage_caption {  font-size: 11px; color: #666; }
+
+div.caption       { padding: 0 4px; }
+div.caption img   { border: 1px solid #CCC; }
+div.caption p     { font-size: 11px; color: #666; text-align: center; }
+
+img.caption {border: 1px solid #CCC; padding: 4px; }
+
+
+
+/** #################### index.php #################### **/
+
+
+.main {
+  text-align       : left;
+  width            : 100%;
+}
+
+div.mod {
+  background       : none;
+  width            : 6px;
+}
+
+#clear {
+  clear: both;
+  height: 30px;
+}
+
+#centertb {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+#contenttb{
+  padding: 10px 10px;
+}
+
+td.pw {
+  width            : 100%;
+  padding          : 5px 5px 10px 5px !important;
+  padding          : 2px 2px 10px 2px;
+}
+
+td.pw div{
+  padding          : 5px;
+  width            : auto;
+  border           : 1px solid #DDE1E3;
+  background       : #ECEEEF;
+}
+
+
+.footer_left {
+  float: left;
+  font-size        : 12px;
+  font-weight      : normal;
+  padding-top      : 10px !important;
+  padding-top      : 15px;
+
+}
+
+.footer_left p {
+  padding-left: 20px;
+  color            : #A4A5A5;
+}
+
+.footer_right {
+  width            : 410px;
+  float: right;
+  font-size        : 12px;
+  font-weight      : normal;
+  padding-top      : 10px;
+  text-align: right;
+}
+
+.footer_right p {
+  padding-right: 20px;
+  color            : #A4A5A5;
+}
+
+.footer_right p a, .footer_left p a {
+  color            : #B8B8B8;
+}
+
+.leftcol, .rightcol {
+  vertical-align   : top;
+  text-align       : left;
+  background       : #E7EAEC;
+}
+
+.leftcol {
+  padding          : 10px;
+  width            : 170px;
+}
+
+.leftcol div {
+  width            : 150px;
+}
+
+.rightcol {
+  padding          : 3px;
+  width            : 170px;
+  border-style     : solid;
+  border-color     : #d0d4e3;
+}
+.rightcol div {
+  width            : 150px;
+}
+
+.foot {
+  height           : 87px;
+  background       : url(../images/footer.jpg) repeat-x top left;
+  border           : 1px solid #ffffff;
+  border-top       : none;
+}
+
+.foot td {
+  padding: 10px 15px;
+}
+
+#top_bar {
+  background     : #ffffff url(../images/banner-bg.png) repeat-x center center
+}
+
+
+/**#################### DEFAULT and FORMS CSS ####################**/
+
+
+a:link, a:visited {
+  color            : #2867A8;
+  text-decoration  : underline;
+}
+
+li {
+  line-height      : 14px;
+  padding-left     : 14px;
+  padding-top      : 2px;
+  background-image : url(../images/strelka_blue.gif) ;
+  background-repeat: no-repeat;
+  background-position: 0px 5px;
+}
+
+/**#################### Joomla CSS ####################**/
+
+/** Buttons **/
+
+.button {
+  font-size        : 11px;
+  color            : #EDF1F3;
+  border           : 1px solid #EDF1F3;
+  margin           : 3px 0;
+  padding          : 2px;
+  cursor           : pointer;
+  background       : url(../images/button_blue.gif) repeat-x top left;
+}
+
+/** Module table  **/
+
+.rightcol div.module h3, .rightcol div.module_menu h3 {
+      background   : url(../images/mod_right_blue.gif) #357BC1 repeat-x top left;
+}
+
+
+/** Read more **/
+
+a.readon:link, a.readon:visited {
+  color            : #3476B9;
+  font-size        : 12px;
+  white-space      : normal;
+  font-weight      : normal;
+  padding          : 1px 0px 1px 10px;
+  float            : right;
+  line-height      : 15px;
+  text-decoration  : none;
+  border-left:2px solid #3476B9;
+}
+
+table.contenttoc td {
+  margin             : 0;
+  padding            : 3px 4px;
+  border-bottom      : 1px solid #dcdcdc;
+  background-image   : url(../images/strelka_blue.gif) ;
+  background-repeat  : no-repeat;
+  background-position: 4px 7px;
+}
+
+/** CSS for Mainmenu **/
+
+.module_menu ul li.active a:link, .module_menu ul li.active  a:visited {
+  color             : #3476B9;
+  border-bottom     : 1px solid #DCDFE1;
+  background        : url(../images/menu_blue.gif) #ECEEEF 96% 50% no-repeat;
+  text-decoration   : none;
+
+}
+
+.module_menu ul li.active ul li a:hover, .module_menu ul li.active ul li ul li a:hover {
+  background       : none;
+  font-size        : 12px;
+  font-weight      : normal;
+  color            : #3476B9;
+  text-decoration  : none;
+  text-indent      : 10px;
+}
+
+
+/** Topmenu  **/
+
+#mainlevel-nav li a:hover {
+  width              : auto;
+  color              : #ffffff;
+  background         : #4C93DC;
+  padding            : 10px 6px 10px 6px;
+  font-weight        : normal;
+  text-decoration    : none;
+}
+
+ul#mainlevel-nav li #active_menu-nav {
+  cursor             : default;
+  position           : relative;
+  width              : auto;
+  background         : #4C93DC;
+  padding            : 10px 6px 10px 6px;
+  color              : #ffffff;
+  text-decoration    : none;
+}
+
+/* System Standard Messages */
+#system-message { margin-bottom: 20px; }
+
+#system-message dd.message ul { background: #C3D2E5 url(../../system/images/notice-info.png) 4px center no-repeat;border-top: 3px solid #DE7A7B; border-bottom: 3px solid #DE7A7B; margin:0px; padding-left: 40px; text-indent:0px;}
+
+/* System Error Messages */
+#system-message dd.error ul { color: #c00; background: #E6C0C0 url(../../system/images/notice-alert.png) 4px center no-repeat; border-top: 3px solid #DE7A7B; border-bottom: 3px solid #DE7A7B; margin:0px; padding-left: 40px; text-indent:0px;}
+
+/* System Notice Messages */
+#system-message dd.notice ul { color: #c00; background: #EFE7B8 url(../../system/images/notice-note.png) 4px center no-repeat; border-top: 3px solid #F0DC7E; border-bottom: 3px solid #F0DC7E; margin:0px; padding-left: 40px; text-indent:0px;}
+
+#system-message dd ul li { background-image: none; }
+
+ul.newsfeed {
+  font-size:8pt;
+  max-width:140px;
+  overflow:hidden;
+  padding-left:0;
+}
+
+ul.newsfeed a:link, ul.newsfeed a:visited {
+  text-decoration:none;
+}
